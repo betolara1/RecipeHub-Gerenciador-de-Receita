@@ -774,9 +774,9 @@ class Aplicativo(MDApp):
 		self.dialog.open()
 		
 	def close_dialogDel(self, *args):
-	   self.dialog.dismiss()
-    
-	def delete(self, *args):	
+		self.dialog.dismiss()
+
+	def delete(self, *args):
 		conn = sqlite3.connect('recipeDB.db')
 		c = conn.cursor()
 		for x in self.cats:
@@ -843,7 +843,7 @@ class Aplicativo(MDApp):
 		Aplicativo().stop()
 	
 	def close_dialogLang(self, *args):
-	   self.dialogs.dismiss()
+		self.dialogs.dismiss()
 	
 	def insertConfig(self):
 		conn = sqlite3.connect('recipeDB.db')
